@@ -1,0 +1,44 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Button Style */
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--bs-warning-clarity, #f39c12); /* Replace with your color variable */
+    background-color: var(--bg-light-warning, #fff7e6); /* Replace with your color variable */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .rounded-circle {
+    border-radius: 50%;
+  }
+  
+  .fas.fa-bell {
+    font-size: 1.5rem; /* Adjust size */
+    color: var(--text-warning, #f39c12); /* Yellow-orange bell icon */
+  }
+  /* Icon Style */
+  .icon-notification {
+    font-size: 1.5rem; /* Adjust size */
+    color: var(--text-warning, #f39c12); /* Replace with your color variable */
+  }
+  
+  /* Hover Effect */
+  .btn-icon:hover {
+    background-color: var(--bg-hover-warning, #f39c12);
+    border-color: var(--bs-hover-warning-clarity, #e67e22);
+  }
+  
+  .icon-notification:hover {
+    color: #fff;
+  }
+  
