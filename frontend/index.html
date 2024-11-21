@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metronic - The World's #1 Selling Tailwind CSS & Bootstrap Admin Template by KeenThemes</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Clone</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Left Section -->
+      <div class="logo-container">
+        <img
+          class="menu-btn"
+          src="/frontend/icons/dots-menu.svg"
+          alt="menu logo"
+          style="width: 13px"
+        />
+        <img
+          class="brand"
+          src="https://preview.keenthemes.com/metronic8/demo61/assets/media/logos/demo44.svg"
+          alt="Metronic logo"
+        />
+      </div>
 
-</head>
-<body>
-    <header>
-        <div class="app-container">
-            <div class="app-header-Brandlogo">
-                <img src="https://preview.keenthemes.com/metronic8/demo61/assets/media/logos/demo44.svg" alt="brand image" class="images">
-            </div>
-            <div class="nav-items">
-                <div class="nav-item-left">
-                    <ul>
-                        <li><span>Home</span></li>
-                        <li><span>Pages</span></li>
-                        <li><span>Apps</span></li>
-                        <li><span>Helps</span></li>
-                    </ul>
-                </div>
-                <div class="nav-item-right">
-                    <div class="btn-icon rounded-circle bg-light-warning border-warning" id="icon-button">
-                        <i class="fas fa-bell text-warning"></i>
-                      </div>
-                    <div class="nav-icon"></div>
-                    <div class="nav-icon"></div>
-                    <div class="nav-profile-img"></div>
-                </div>
-            </div>
+      <div class="sub-container">
+        <ul class="nav-links">
+          <li id="link1" >Home</li>
+          <li>Pages</li>
+          <li>Apps</li>
+          <li>Help</li>
+        </ul>
+
+        <!-- Right Section -->
+        <div class="right-container">
+          <img class="icons border1"
+            src="/frontend/icons/notification-icon.svg"
+            alt="Notification Icon" style="width: 25px;"
+          />
+          <img class="icons border2" src="/frontend/icons/message-icon.svg" alt="Message Icon" />
+          <img class="icons border3" src="/frontend/icons/menu-icon.svg" alt="Menu Icon" />
+          <div class="user-profile">
+            <span>Hello <br>Ethan</span>
+            <img
+              class="avatar"
+              src="https://preview.keenthemes.com/metronic8/demo61/assets/media/avatars/300-3.jpg"
+              alt="User Avatar"
+            />
+          </div>
         </div>
-    </header>
-</body>
+
+
+      </div>
+    </nav>
+  </body>
 </html>

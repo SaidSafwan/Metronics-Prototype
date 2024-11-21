@@ -1,44 +1,133 @@
-/* Reset */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* General reset */
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Button Style */
-  .btn-icon {
+
+    font-optical-sizing: auto;
+    font-size: 13px !important;
+    font-weight: 400;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 30px; /* Increased height by adding padding */
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    border-bottom: 2px solid #e0e0e0; /* Horizontal bottom border */
+}
+
+/* Logo Section */
+.logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border: 1px solid var(--bs-warning-clarity, #f39c12); /* Replace with your color variable */
-    background-color: var(--bg-light-warning, #fff7e6); /* Replace with your color variable */
+    gap: 18px;
+}
+
+/* Menu Button Border */
+.menu-btn {
+    border: 2px solid #99A1B7; /* Border around menu button */
+    border-radius: 5px; /* Slight curve to the border */
+    padding: 2px; /* Space between border and icon */
     cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .rounded-circle {
+}
+
+.brand {
+    height: 24.5px; /* Adjust logo height */
+}
+
+/* Sub-container styling */
+.sub-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures links and right container are evenly spaced */
+    flex: 1;
+    margin-left: 50px; /* Add spacing between logo and the rest */
+    /* background-color: red; */
+    /* padding: 3px; */
+    padding-right: 20px;
+}
+
+/* UL Links styling */
+.sub-container ul {
+    display: flex;
+    gap: 23px; /* Space between list items */
+    list-style-type: none;
+    padding: .65rem 1rem;
+    margin: 0;
+    align-items: center;
+    font-weight: 600;
+    color: #4B5675;
+    font-size: 1.1em;
+    
+}
+
+#link1{
+    padding: .65rem 1rem;
+    background-color: #F1F1F4;
+    border-radius: 10px;
+    color: #071437;
+}
+
+.nav-links li:hover {
+    color: #0056b3; /* Hover effect */
+    cursor: pointer;
+}
+
+/* Right Section */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between icons */
+}
+
+/* Add border and make icons round */
+.right-container > img {
+    width: 20px;
+    height: 25px; /* Adjust height for aspect ratio */
+    border-radius: 50%; /* Full round shape */
+    padding: 5px; /* Space between border and icon */
+    cursor: pointer;
+}
+
+.border1 {
+    border: 2px solid rgba(246, 192, 0, 0.2); /* Custom border color */
+    background-color: rgba(246, 192, 0, 0.1); /* Custom background color */
+}
+
+.border2 {
+    border: 2px solid rgba(27, 132, 255, 0.2); /* Custom border color */
+    background-color: rgba(27, 132, 255, 0.1); /* Custom background color */
+}
+
+.border3 {
+    border: 2px solid rgba(23, 198, 83, 0.2); /* Custom border color */
+    background-color: rgba(23, 198, 83, 0.1); /* Custom background color */
+}
+
+
+/* User Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.user-profile .avatar {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-  }
-  
-  .fas.fa-bell {
-    font-size: 1.5rem; /* Adjust size */
-    color: var(--text-warning, #f39c12); /* Yellow-orange bell icon */
-  }
-  /* Icon Style */
-  .icon-notification {
-    font-size: 1.5rem; /* Adjust size */
-    color: var(--text-warning, #f39c12); /* Replace with your color variable */
-  }
-  
-  /* Hover Effect */
-  .btn-icon:hover {
-    background-color: var(--bg-hover-warning, #f39c12);
-    border-color: var(--bs-hover-warning-clarity, #e67e22);
-  }
-  
-  .icon-notification:hover {
-    color: #fff;
-  }
-  
+    object-fit: cover; /* Ensures circular avatar */
+    /*border: 2px solid #ddd;*/ /* Border around the avatar */
+    padding: 2px; /* Space between avatar image and border */
+    display: flex;
+    flex-wrap: wrap;
+}
+
