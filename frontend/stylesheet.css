@@ -18,7 +18,7 @@ body {
     padding: 10px 15px 10px 30px; /* Increased height by adding padding */
     background-color: #fff;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-    border-bottom: 2px solid #e0e0e0; /* Horizontal bottom border */
+    border-bottom: 1px solid #e0e0e0; /* Horizontal bottom border */
 }
 
 /* Logo Section */
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-links li:hover {
-    color: #0056b3; /* Hover effect */
+    color: #252F4A; /* Hover effect */
     cursor: pointer;
 }
 
@@ -130,4 +130,184 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+/* Feature Sections */
+
+.app-hero-container{
+    /* background-color: lavenderblush; */
+    padding:10px 30px;
+    border-bottom: 1px solid #e0e0e0; /* Horizontal bottom border */
+}
+
+.app-hero-container .feature-section{
+    /* background-color: bisque; */
+    /* background-color: lightgreen; */
+}
+
+.app-hero-container .feature-links{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.app-hero-container ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 0.9rem !important;
+    font-weight: 650;
+    padding: 0.75em 1em;
+    margin: 10px 3px;
+    /* background-color: #0056b3; */
+    /* border: 1px solid #99A1B7; */
+    border-radius: 7px;
+    color: #78829D;
+}
+
+/* Hover Effect */
+.feature-links li:hover {
+    background-color: #99a1b711;
+    color: #252F4A;
+}
+
+/* Active State */
+.feature-links li.active {
+    background-color: #99a1b711;
+    color: #252F4A;
+}
+
+
+/* Styling the container */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 300px; /*Adjust as needed*/
+    border: 1px solid rgba(128, 128, 128, 0.118);
+    border-radius: 8px;
+}
+
+/* Styling the icon */
+.input-container i {
+    position: absolute;
+    left: 10px; /* Space from the left edge */
+    color: #999;
+    font-size: 16px; /* Adjust size if needed */
+}
+
+/* Styling the input field */
+.input-container input {
+    width: 100%;
+    padding: 13px 10px;
+    padding-left: 30px; /* Add left padding to make space for the icon */
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 8px;
+    font-size: 0.9rem !important;
+    font-weight: 400;
+    color: #4B5675;
+    background-color: #F9F9F9;
+    
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: lightsalmon; */
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    gap: 15px;
+}
+
+.filter-btn{
+    padding: 7px;
+    border: 1px solid rgba(128, 128, 128, 0.118);
+    background-color: #F9F9F9;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn{
+    padding: 13px 17px;
+    border: 1px solid rgba(128, 128, 128, 0.118);
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    font-size: 0.9rem !important;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background-color: rgba(0, 0, 0, 0.882);
+}
+
+.filter-section .dropdown-items,
+.filter-section .input-container, .filter-btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-section .dropdown-items:hover,
+.filter-section .input-container:hover,
+.filter-btn:hover {
+    /* background-color: #cececf; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Apply new background color to clicked items */
+.filter-section .clicked {
+    background-color: #bababa97; /* Your desired color */
+    border-color: #ccc; /* Optional border style */
+    /* transition: background-color 0.3s; Smooth transition */
+}
+
+/* Style the dropdown select element */
+.filter-section .dropdown-items {
+    padding: 13px 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(128, 128, 128, 0.118);
+    border-radius: 8px;
+    color:#4B5675;
+    font-size: 0.95rem !important;
+    font-weight: 500;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    appearance: none; /* Remove default browser styling */
+    width: 160px; /* Optional: Set a fixed width */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Style the options inside the dropdown */
+  .filter-section .dropdown-items .items  {
+    background-color: #fff; 
+    color: #78829D;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .filter-section .dropdown-items .items:hover {
+    color: red; /* Change text color when hovering over option */
+    cursor: pointer; /* Make cursor a pointer to indicate it's clickable */
+  }
+  
+
+  /* Add custom arrow for the dropdown */
+.filter-section .dropdown-items {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center; /* Position the arrow */
+  background-size: 10px; /* Size of the arrow */
+}
+
+  
+
+
+
 

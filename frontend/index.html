@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar Clone</title>
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -25,7 +32,7 @@
 
       <div class="sub-container">
         <ul class="nav-links">
-          <li id="link1" >Home</li>
+          <li id="link1">Home</li>
           <li>Pages</li>
           <li>Apps</li>
           <li>Help</li>
@@ -33,14 +40,24 @@
 
         <!-- Right Section -->
         <div class="right-container">
-          <img class="icons border1"
+          <img
+            class="icons border1"
             src="/frontend/icons/notification-icon.svg"
-            alt="Notification Icon" style="width: 25px;"
+            alt="Notification Icon"
+            style="width: 25px"
           />
-          <img class="icons border2" src="/frontend/icons/message-icon.svg" alt="Message Icon" />
-          <img class="icons border3" src="/frontend/icons/menu-icon.svg" alt="Menu Icon" />
+          <img
+            class="icons border2"
+            src="/frontend/icons/message-icon.svg"
+            alt="Message Icon"
+          />
+          <img
+            class="icons border3"
+            src="/frontend/icons/menu-icon.svg"
+            alt="Menu Icon"
+          />
           <div class="user-profile">
-            <span>Hello <br>Ethan</span>
+            <span>Hello <br />Ethan</span>
             <img
               class="avatar"
               src="https://preview.keenthemes.com/metronic8/demo61/assets/media/avatars/300-3.jpg"
@@ -48,9 +65,96 @@
             />
           </div>
         </div>
-
-
       </div>
     </nav>
+
+    <div class="app-hero-container">
+      <div class="feature-section">
+        <ul class="feature-links">
+          <li class="active">Rent</li>
+          <li>Buy</li>
+          <li>New Construction</li>
+          <li>Business Space</li>
+        </ul>
+      </div>
+
+      <div class="filter-section">
+        <div class="input-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name="searchbar"
+            placeholder="Location"
+            value="Amsterdam"
+            class="search-bar"
+          />
+        </div>
+
+        <select name="apartment" class="dropdown-items">
+          <option class="items">All</option>
+          <option class="items" selected>Apartment</option>
+          <option class="items">Condos</option>
+          <option class="items">Townhouse</option>
+          <option class="items">Commercial</option>
+        </select>
+
+        <select name="amount" class="dropdown-items">
+          <option class="items">All</option>
+          <option class="items" selected>&#8364;75,000</option>
+          <option class="items">&#8364;100,000</option>
+          <option class="items">&#8364;150,000</option>
+          <option class="items">&#8364;200,000</option>
+          <option class="items">&#8364;500,000</option>
+        </select>
+
+        <select name="rooms" class="dropdown-items">
+          <option class="items">All</option>
+          <option class="items">1 beds</option>
+          <option class="items" selected>2 beds</option>
+          <option class="items">3 beds</option>
+          <option class="items">4 beds</option>
+          <option class="items">5+ beds</option>
+        </select>
+
+        <button class="filter-btn">
+          <img src="/frontend/icons/horizontal-adjust.svg" alt="adjust icon" style="width: 30px;" />
+        </button>
+
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+    
   </body>
+  <script>
+    // Select all the list items
+    const featureLinks = document.querySelectorAll(".feature-links li");
+
+    // Add click event listeners to each item
+    featureLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        // Remove 'active' class from all items
+        featureLinks.forEach((item) => item.classList.remove("active"));
+
+        // Add 'active' class to the clicked item
+        link.classList.add("active");
+      });
+    });
+
+    // Select all filter items (search bar and dropdowns)
+const filterItems = document.querySelectorAll(
+  ".filter-section .search-bar, .filter-section .dropdown-items"
+);
+
+// Add click event listeners
+filterItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    // Remove 'clicked' class from all items
+    filterItems.forEach((el) => el.classList.remove("clicked"));
+
+    // Add 'clicked' class to the clicked item
+    item.classList.add("clicked");
+  });
+});
+
+  </script>
 </html>
