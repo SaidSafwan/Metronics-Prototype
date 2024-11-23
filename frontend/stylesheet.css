@@ -3,7 +3,7 @@
 /* General reset */
 body {
     margin: 0;
-    width: 100vw;
+    /* width: 100vw; */
     font-optical-sizing: auto;
     font-size: 13px !important;
     font-weight: 400;
@@ -322,12 +322,16 @@ body {
 .app-content{
     /* background-color: yellow; */
     padding-top: 10px ;
+    display: flex;
+    height: 60vh; Full height of the viewport
+    width: 100%; /* Full width of the container */
 }
 
 .app-left{
-    width: 50%;
+    flex: 0 0 50%; /* Fixed width at 50% of the container */
+    max-width: 50%; /* Prevent it from growing larger than 50% */
     /* background-color: lightcoral; */
-    padding-right: 20px;
+    padding: 0px 10px 0px 0px;
 }
 
 .record{
@@ -539,4 +543,19 @@ body {
     scrollbar-color: #99a1b740 transparent; /* Customize scrollbar colors */
 }
   
+
+/* Right part (flexible) */
+.app-right {
+    flex: 1; /* Takes up the remaining width */
+    max-width: 50%; /* Match left part width */
+    /* height: calc(100% - 20%); Reduce height slightly compared to its container */
+    background-color: #e9e9e9; /* Optional: Background for testing */
+    margin-top: 10px; /* Add a small margin to create the effect of reduced height */
+    overflow: hidden; /* Prevent content overflow */
+    border-radius: 15px;
+  }
   
+  /* Optional: Add padding or spacing for better appearance */
+  .app-container {
+    padding: 10px; /* Space around the content */
+  }

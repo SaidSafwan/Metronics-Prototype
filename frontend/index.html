@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar Clone</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
     <link rel="stylesheet" href="stylesheet.css" />
     <link
       rel="stylesheet"
@@ -407,9 +415,38 @@
         </div>
 
         <!-- Right Part for Map -->
-        <div class="app-right"></div>
+        <div class="app-right">
+          <div id="map" style="width: 100%; height: 500px; border-radius: 15px;"></div>
+        </div>
       </div>
     </div>
+    </div>
+
+    
+    <script>
+      // Initialize the map
+      const map = L.map("map").setView([52.360373, 4.859594], 18);
+  
+      // Add OpenStreetMap tiles
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 17, // Recommended maximum zoom level
+          attribution: '© OpenStreetMap contributors',
+      }).addTo(map);
+  
+      // Define a custom icon
+      const customIcon = L.icon({
+          iconUrl: "/frontend/icons/icons-location.svg", // Path to your custom icon
+          iconSize: [40, 50], // Size of the icon [width, height]
+          iconAnchor: [35, 70], // Point of the icon that will correspond to marker's location [x, y]
+          popupAnchor: [-14, -70], // Point from which the popup should open relative to the icon [x, y]
+      });
+  
+      // Add a marker with the custom icon
+      L.marker([52.360373, 4.859594], { icon: customIcon }).addTo(map)
+          .bindPopup("1054 XE Amsterdam")
+          .openPopup();
+  </script>
+  
   </body>
   <script>
     // Select all the list items
