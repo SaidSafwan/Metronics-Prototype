@@ -90,7 +90,7 @@
           />
         </div>
 
-        <select name="apartment" class="dropdown-items">
+        <select name="apartment" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items" selected>Apartment</option>
           <option class="items">Condos</option>
@@ -98,7 +98,7 @@
           <option class="items">Commercial</option>
         </select>
 
-        <select name="amount" class="dropdown-items">
+        <select name="amount" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items" selected>&#8364;75,000</option>
           <option class="items">&#8364;100,000</option>
@@ -107,7 +107,7 @@
           <option class="items">&#8364;500,000</option>
         </select>
 
-        <select name="rooms" class="dropdown-items">
+        <select name="rooms" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items">1 beds</option>
           <option class="items" selected>2 beds</option>
@@ -117,13 +117,299 @@
         </select>
 
         <button class="filter-btn">
-          <img src="/frontend/icons/horizontal-adjust.svg" alt="adjust icon" style="width: 30px;" />
+          <img
+            src="/frontend/icons/horizontal-adjust.svg"
+            alt="adjust icon"
+            style="width: 30px"
+          />
         </button>
 
         <button class="search-btn">Search</button>
       </div>
     </div>
-    
+
+    <div class="app-container">
+      <div class="app-content">
+        <!-- Left part for cards -->
+        <div class="app-left">
+          <div class="record">
+            <div class="results">
+              <p>Showing <b style="color: #252f4a">65</b> search results</p>
+            </div>
+
+            <div class="filter-area">
+              <select name="rooms" class="dropdown-items clicked">
+                <option class="items">All</option>
+                <option class="items"selected>Popular</option>
+                <option class="items" >Top Rated</option>
+                <option class="items">Best Match</option>
+              </select>
+              <div class="toggle-card">
+                <img
+                  src="/frontend/icons/icons-grid.svg"
+                  alt="grid-icon"
+                  class="grid-icon"
+                />
+                <img
+                  src="/frontend/icons/icons-rows.svg"
+                  alt="row icon"
+                  class="row-icon"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-list">
+
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/20.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Bella Vistastraat 246</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1074 SH Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>64 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>2</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>C</span>
+              </div>
+
+              <h2 class="price-tag">€499,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">Vondelland Makelaar B.V.</a>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/23.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Brenner 79 A</a>
+                </div>
+                <img src="/frontend/icons/icons-heart-filled.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1061 OG Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>56 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>2</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>D</span>
+              </div>
+
+              <h2 class="price-tag">€575,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">RijksPlaats Makelaar</a>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="cards focused">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/27.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Bella Vistastraat 246</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1109 RV Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>109 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>3</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>A</span>
+              </div>
+
+              <h2 class="price-tag">€799,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">Vondelland Makelaar B.V.</a>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="	https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/11.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">
+                    Argonautenstraat 16 C</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1074 SH Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>73 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>3</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>C</span>
+              </div>
+
+              <h2 class="price-tag">€799,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">RijksPlaats Makelaar</a>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/13.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Bella Vistastraat 246</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1074 SH Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>164 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>5</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>C</span>
+              </div>
+
+              <h2 class="price-tag">€810,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">
+                 .RijksPlaats Makelaar</a>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/1.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Bella Vistastraat 246</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1074 SH Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>64 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>2</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>C</span>
+              </div>
+
+              <h2 class="price-tag">€399,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">RijksPlaats Makelaar</a>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="cards">
+            <!-- card-left image -->
+            <div class="card-left">
+              <img class="aprt-images" src="https://preview.keenthemes.com/metronic8/demo61/assets/media//stock/900x600/16.jpg" alt="resident image">
+            </div>
+            <!-- card-right info -->
+            <div class="card-right">
+
+              <div class="img-title">
+                <div class="add-tag">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <a href="#">Bella Vistastraat 246</a>
+                </div>
+                <img src="/frontend/icons/icons-heart.svg" class="like-icon" alt="heart-icon" />
+              </div>
+
+              <p class="aprt-info">1074 SH Amsterdam</p>
+
+              <div class="cards-icons">
+                <img src="/frontend/icons/icons-stretch-tool.svg" alt="icon"><span>64 m2</span>
+                <img src="/frontend/icons/icons-single-bed.svg" alt="icon"><span>2</span>
+                <img src="/frontend/icons/icons-the-flash-sign.svg" style="width: 24px;" alt="icon"><span>C</span>
+              </div>
+
+              <h2 class="price-tag">€899,000</h2>
+
+              <div class="location-tag">
+                <a href="#" class="">RijksPlaats Makelaar</a>
+              </div>
+              
+            </div>
+            
+          </div>
+            
+        </div> 
+        <!-- end of card list -->
+
+        </div>
+
+        <!-- Right Part for Map -->
+        <div class="app-right"></div>
+      </div>
+    </div>
   </body>
   <script>
     // Select all the list items
@@ -141,20 +427,19 @@
     });
 
     // Select all filter items (search bar and dropdowns)
-const filterItems = document.querySelectorAll(
-  ".filter-section .search-bar, .filter-section .dropdown-items"
-);
+    const filterItems = document.querySelectorAll(
+      ".filter-section .search-bar, .filter-section .dropdown-items .items"
+    );
 
-// Add click event listeners
-filterItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    // Remove 'clicked' class from all items
-    filterItems.forEach((el) => el.classList.remove("clicked"));
+    // Add click event listeners
+    filterItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Remove 'clicked' class from all items
+        filterItems.forEach((el) => el.classList.remove("clicked"));
 
-    // Add 'clicked' class to the clicked item
-    item.classList.add("clicked");
-  });
-});
-
+        // Add 'clicked' class to the clicked item
+        item.classList.add("clicked");
+      });
+    });
   </script>
 </html>
