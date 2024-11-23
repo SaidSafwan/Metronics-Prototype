@@ -312,16 +312,16 @@ body {
 /* styling app content cards */
 
 .app-container{
-    padding: 5px 30px ;
+    padding: 10px 30px 0px 30px  ;
     font-size: 0.85rem;
     font-weight: 500;
     color: #4b5675d0;
-    /* background-color: red; */
+    /* background-color: green; */
 }
 
 .app-content{
     /* background-color: yellow; */
-    padding-top: 10px ;
+    padding-top: 10px 10px 0px 10px;
     display: flex;
     height: 60vh; Full height of the viewport
     width: 100%; /* Full width of the container */
@@ -332,6 +332,7 @@ body {
     max-width: 50%; /* Prevent it from growing larger than 50% */
     /* background-color: lightcoral; */
     padding: 0px 10px 0px 0px;
+    overflow: hidden;
 }
 
 .record{
@@ -446,9 +447,12 @@ body {
 }
 
 .cards .card-left{
-    width: 28%;
+    width: 33%;
     /* background-color: red; */
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:2;
 }
 
 .card-left .aprt-images{
@@ -458,8 +462,9 @@ body {
 }
 
 .cards .card-right{
-    width: 70%;
+    width: 63%;
     /* background-color: lightskyblue; */
+    
     border-radius: 8px;
     padding: 5px;
 }
@@ -555,7 +560,38 @@ body {
     border-radius: 15px;
   }
   
-  /* Optional: Add padding or spacing for better appearance */
-  .app-container {
-    padding: 10px; /* Space around the content */
+
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 20px 0px 20px;
+    /* background-color: red; */
+    font-size: 0.85rem;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
   }
+
+  footer .left-foot p{
+    color: #99A1B7;
+  }
+  footer .left-foot span{
+    color: #252F4A;
+  }
+  footer .left-foot span:hover{
+    color: #1B84FF;
+  }
+
+  footer .right-foot a{
+      text-decoration: none;
+      color:#4B5675;
+      font-weight: 600;
+      padding: 10px;
+      font-size: 0.85rem;
+      font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+footer .right-foot a:hover{
+    color: #1B84FF;
+
+}
+
