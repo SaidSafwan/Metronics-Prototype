@@ -38,6 +38,7 @@ body {
 
 .brand {
     height: 24.5px; /* Adjust logo height */
+    cursor: pointer;
 }
 
 /* Sub-container styling */
@@ -87,25 +88,25 @@ body {
 
 /* Add border and make icons round */
 .right-container > img {
-    width: 20px;
-    height: 25px; /* Adjust height for aspect ratio */
+    width: 17px;
+    height: 20px; /* Adjust height for aspect ratio */
     border-radius: 50%; /* Full round shape */
     padding: 5px; /* Space between border and icon */
     cursor: pointer;
 }
 
 .border1 {
-    border: 2px solid rgba(246, 192, 0, 0.2); /* Custom border color */
+    border: 1px solid rgba(246, 192, 0, 0.2); /* Custom border color */
     background-color: rgba(246, 192, 0, 0.1); /* Custom background color */
 }
 
 .border2 {
-    border: 2px solid rgba(27, 132, 255, 0.2); /* Custom border color */
+    border: 1px solid rgba(27, 132, 255, 0.2); /* Custom border color */
     background-color: rgba(27, 132, 255, 0.1); /* Custom background color */
 }
 
 .border3 {
-    border: 2px solid rgba(23, 198, 83, 0.2); /* Custom border color */
+    border: 1px solid rgba(23, 198, 83, 0.2); /* Custom border color */
     background-color: rgba(23, 198, 83, 0.1); /* Custom background color */
 }
 
@@ -118,6 +119,15 @@ body {
     font-size: 13px;
     justify-content: space-between;
     margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.user-profile .username{
+    font-weight: 500;
+}
+.user-profile .username:hover{
+    color: #007bff;
 }
 
 .user-profile .avatar {
@@ -129,6 +139,7 @@ body {
     padding: 2px; /* Space between avatar image and border */
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 
@@ -136,7 +147,7 @@ body {
 
 .app-hero-container{
     /* background-color: lavenderblush; */
-    padding:10px 30px;
+    padding:17px 30px;
     border-bottom: 1px solid #e0e0e0; /* Horizontal bottom border */
 }
 
@@ -195,7 +206,7 @@ body {
 /* Styling the input field */
 .input-container input {
     width: 100%;
-    padding: 13px 10px;
+    padding: 11px 12px;
     padding-left: 30px; /* Add left padding to make space for the icon */
     border: none;
     outline: none;
@@ -212,16 +223,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     /* background-color: lightsalmon; */
-    height: 50px;
-    padding: 10px;
+    height: 45px;
+    padding: 1px 6px;
     align-items: center;
     gap: 15px;
     font-weight: 400;
     font-family: "Inter", Arial, Helvetica, sans-serif;
+    align-content: center;
 }
 
 .filter-btn{
-    padding: 7px;
+    padding: 4px px;
     border: 1px solid rgba(128, 128, 128, 0.118);
     background-color: #99a1b711;
     border-radius: 8px;
@@ -230,7 +242,7 @@ body {
 }
 
 .search-btn{
-    padding: 13px 17px;
+    padding: 11px 12px;
     border: 1px solid rgba(128, 128, 128, 0.118);
     border-radius: 8px;
     background-color: rgb(0, 0, 0);
@@ -271,7 +283,7 @@ body {
 
 /* Style the dropdown select element */
 .filter-section .dropdown-items {
-    padding: 13px 20px;
+    padding: 11px 12px;
     outline: none;
     box-sizing: border-box;
     border: 1px solid rgba(128, 128, 128, 0.118);
@@ -352,7 +364,7 @@ body {
 }
 
 .filter-area .dropdown-items {
-    padding: 7px 15px;
+    padding: 9px 15px;
     outline: none;
     box-sizing: border-box;
     border: 1px solid rgba(128, 128, 128, 0.118);
@@ -398,18 +410,19 @@ body {
     display: flex;
     align-items: center;
     background-color: #99a1b711;
-    padding: 5px;
+    padding: 7px 5px;
     border: 1px solid rgba(128, 128, 128, 0.118);
     border-radius: 8px;
     gap: 4px;
+    cursor: pointer;
 }
 
 .grid-icon{
-    width: 15px;
+    width: 16px;
     /* background-color: #4B5675; */
 }
 .row-icon{
-    width: 15px;
+    width: 16px;
     padding: 3px;
     /* background-color: #4B5675; */
     background-color: white;
