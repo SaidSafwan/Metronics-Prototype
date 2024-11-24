@@ -27,7 +27,7 @@
 } */
 .select-menu .select-btn{
     outline: none;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     border: 1px solid rgba(128, 128, 128, 0.118);
     border-radius: 8px;
     color:#4B5675;
@@ -37,11 +37,12 @@
     cursor: pointer;
     width: 170px; /* Optional: Set a fixed width */
     transition: all 0.3s ease; /* Smooth transition */
-
+    /* margin: 0; */
     display: flex;
-    padding: 10px;
+    padding: 7px;
     align-items: center;
     justify-content: space-between;
+    /* background-color: red; */
 }
 
 .select-menu .select-btn:hover{
@@ -66,10 +67,12 @@
     width: 170px;
     padding: 0;
     border-radius: 8px;
-    background-color: #F9F9F9; 
+    background-color: white; 
     color: #78829D;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
     display: none;
+    /* overflow: visible; */
+    z-index: 10;
 }
 .select-menu.active .options{
     display: block;
@@ -87,7 +90,7 @@
     background: rgb(255, 255, 255);
     justify-content: space-between;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 999;
 }
 .options .option:hover{
     background: #f1f1f465;

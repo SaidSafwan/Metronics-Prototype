@@ -583,7 +583,7 @@ body {
     margin-top: 10px; /* Add a small margin to create the effect of reduced height */
     overflow: hidden; /* Prevent content overflow */
     border-radius: 15px;
-    z-index: -1;
+    z-index: 1;
   }
   
 
