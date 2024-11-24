@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metronic Prototype</title>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./Modals/dropdown.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!--===== Boxicons CSS =====-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
@@ -29,7 +33,7 @@
           class="menu-btn"
           src="/frontend/icons/dots-menu.svg"
           alt="menu logo"
-          style="width: 13px"
+          style="width: 21px"
         />
         <img
           class="brand"
@@ -52,7 +56,7 @@
             class="icons border1"
             src="/frontend/icons/notification-icon.svg"
             alt="Notification Icon"
-            style="width: 25px"
+            style="width: 32px"
           />
           <img
             class="icons border2"
@@ -97,32 +101,131 @@
             class="search-bar"
           />
         </div>
+        <!-- <div class="dropdown-items clicked"> -->
+            <div class="select-menu ">
+              <div class="select-btn">
+                  <span class="sBtn-text">Apartment</span>
+                  <i class="bx bx-chevron-down"></i>
+              </div>
+      
+              <ul class="options">
+                  <li class="option">
+                      <span class="option-text">All</span>
+                      <i class="bx bx-check" style="color: #1B84FF;"></i>
+                  </li>
+                  <li class="option selected">
+                      <span class="option-text">Apartment</span>
+                      <i class="bx bx-check" style="color: #1B84FF;"></i>
+                  </li>
+                  <li class="option">
+                      <span class="option-text">Condos</span>
+                      <i class="bx bx-check" style="color: #1B84FF;"></i>
+                  </li>
+                  <li class="option">
+                      <span class="option-text">Townhouse</span>
+                      <i class="bx bx-check" style="color: #1B84FF;"></i>
+                  </li>
+                  <li class="option">
+                      <span class="option-text">Commercial</span>
+                      <i class="bx bx-check" style="color: #1B84FF;"></i>
+                  </li>
+              </ul>
+            </div> 
+        <!-- </div>  -->
 
-        <select name="apartment" class="dropdown-items clicked">
+        <!-- <select name="apartment" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items" selected>Apartment</option>
           <option class="items">Condos</option>
           <option class="items">Townhouse</option>
           <option class="items">Commercial</option>
-        </select>
+        </select> -->
 
-        <select name="amount" class="dropdown-items clicked">
+        <!-- <select name="amount" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items" selected>&#8364;75,000</option>
           <option class="items">&#8364;100,000</option>
           <option class="items">&#8364;150,000</option>
           <option class="items">&#8364;200,000</option>
           <option class="items">&#8364;500,000</option>
-        </select>
-
-        <select name="rooms" class="dropdown-items clicked">
+        </select> -->
+        
+        <div class="select-menu ">
+          <div class="select-btn">
+              <span class="sBtn-text">&#8364;75,000</span>
+              <i class="bx bx-chevron-down"></i>
+          </div>
+  
+          <ul class="options">
+              <li class="option">
+                  <span class="option-text">All</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option selected">
+                  <span class="option-text">&#8364;75,000</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">&#8364;100,000</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">&#8364;150,000</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">&#8364;200,000</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">&#8364;500,000+</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+          </ul>
+        </div> 
+        
+        <!-- <select name="rooms" class="dropdown-items clicked">
           <option class="items">All</option>
           <option class="items">1 beds</option>
           <option class="items" selected>2 beds</option>
           <option class="items">3 beds</option>
           <option class="items">4 beds</option>
           <option class="items">5+ beds</option>
-        </select>
+        </select> -->
+        
+        <div class="select-menu ">
+          <div class="select-btn">
+              <span class="sBtn-text">2 beds</span>
+              <i class="bx bx-chevron-down"></i>
+          </div>
+  
+          <ul class="options">
+              <li class="option">
+                  <span class="option-text">All</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option selected">
+                  <span class="option-text">1 beds</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">2 beds</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">3 beds</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">4 beds</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+              <li class="option">
+                  <span class="option-text">5 beds</span>
+                  <i class="bx bx-check" style="color: #1B84FF;"></i>
+              </li>
+          </ul>
+        </div>
 
         <button class="filter-btn">
           <img
@@ -158,11 +261,13 @@
                   alt="grid-icon"
                   class="grid-icon"
                 />
-                <img
-                  src="/frontend/icons/icons-rows.svg"
-                  alt="row icon"
-                  class="row-icon"
-                />
+                <div class="row-btn">
+                  <img
+                    src="/frontend/icons/icons-rows.svg"
+                    alt="row icon"
+                    class="row-icon"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -436,6 +541,8 @@
       </div>
     </footer>
 
+    <script src="./Modals/dropdown.js"></script>
+
     
     <script>
       // Initialize the map
@@ -479,7 +586,7 @@
 
     // Select all filter items (search bar and dropdowns)
     const filterItems = document.querySelectorAll(
-      ".filter-section .search-bar, .filter-section .dropdown-items .items"
+      ".filter-section .search-bar, .filter-section .select-menu .select-btn"
     );
 
     // Add click event listeners

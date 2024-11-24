@@ -9,6 +9,7 @@ body {
     font-weight: 400;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     font-style: normal;
+    max-height: 100vh;
 }
 
 .navbar {
@@ -88,8 +89,8 @@ body {
 
 /* Add border and make icons round */
 .right-container > img {
-    width: 17px;
-    height: 20px; /* Adjust height for aspect ratio */
+    width: 29px;
+    height: 32px; /* Adjust height for aspect ratio */
     border-radius: 50%; /* Full round shape */
     padding: 5px; /* Space between border and icon */
     cursor: pointer;
@@ -147,7 +148,7 @@ body {
 
 .app-hero-container{
     /* background-color: lavenderblush; */
-    padding:17px 30px;
+    padding:7px 30px 20px 30px;
     border-bottom: 1px solid #e0e0e0; /* Horizontal bottom border */
 }
 
@@ -156,6 +157,7 @@ body {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    /* background-color: lawngreen; */
 }
 
 .app-hero-container ul li {
@@ -230,6 +232,7 @@ body {
     font-weight: 400;
     font-family: "Inter", Arial, Helvetica, sans-serif;
     align-content: center;
+    position: relative;
 }
 
 .filter-btn{
@@ -276,8 +279,8 @@ body {
 
 /* Apply new background color to clicked items */
 .filter-section .clicked {
-    background-color: #bababa97; /* Your desired color */
-    border-color: #ccc; /* Optional border style */
+    background-color: #afafaf34; /* Your desired color */
+    /* border-color: #ccc; Optional border style */
     /* transition: background-color 0.3s; Smooth transition */
 }
 
@@ -324,18 +327,19 @@ body {
 /* styling app content cards */
 
 .app-container{
-    padding: 10px 30px 0px 30px  ;
+    padding: 10px 30px 4px 30px  ;
     font-size: 0.85rem;
     font-weight: 500;
     color: #4b5675d0;
     /* background-color: green; */
+    height: 65.5vh;
 }
 
 .app-content{
     /* background-color: yellow; */
     padding-top: 10px 10px 0px 10px;
     display: flex;
-    height: 60vh; Full height of the viewport
+    height: 100%; /*Full height of the viewport */
     width: 100%; /* Full width of the container */
 }
 
@@ -405,15 +409,15 @@ body {
 }
 
 .toggle-card{
-    width: 39px;
-    height: 20px;
+    width: 50px;
+    height: 33px;
     display: flex;
     align-items: center;
     background-color: #99a1b711;
-    padding: 7px 5px;
+    padding: 4px;
     border: 1px solid rgba(128, 128, 128, 0.118);
     border-radius: 8px;
-    gap: 4px;
+    gap: 2px;
     cursor: pointer;
 }
 
@@ -422,14 +426,22 @@ body {
     /* background-color: #4B5675; */
 }
 .row-icon{
-    width: 16px;
-    padding: 3px;
+    width: 18px;
+    /* padding: 1px; */
     /* background-color: #4B5675; */
+}
+
+.row-btn{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    place-content: center;
+    background-color: maroon;
+    /* padding: 2px; */
     background-color: white;
     border: 1px solid rgba(128, 128, 128, 0.118);
     border-radius: 6px;
 }
-
 
 /* Design cards */
 
@@ -571,6 +583,7 @@ body {
     margin-top: 10px; /* Add a small margin to create the effect of reduced height */
     overflow: hidden; /* Prevent content overflow */
     border-radius: 15px;
+    z-index: -1;
   }
   
 
@@ -578,7 +591,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 7px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
     /* background-color: red; */
     font-size: 0.85rem;
     font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -592,6 +605,7 @@ body {
   }
   footer .left-foot span:hover{
     color: #1B84FF;
+    cursor: pointer;
   }
 
   footer .right-foot a{
