@@ -39,30 +39,20 @@ To clone and run this project on your local machine, follow these steps:
 
    ```cmd
    git clone https://github.com/SaidSafwan/Metronics-Prototype.git
+   ```
+   Replace <repository-url> with the actual URL of this repository.
+   
+2. Open Project in Your Code Editor
 
-2. Replace <repository-url> with the actual URL of this repository.
+3. Open the project folder in your preferred editor, such as Visual Studio Code.
+ 
+4. Navigate to the project folder:
+ 
+   ```cmd
+    cd frontend
+   ```
 
-Open Project in Your Code Editor
-
-3. Navigate to the project folder:
-
-  ```cmd
-  cd <cloned-folder-name>
-  ```
-
-4. Replace <cloned-folder-name> with the name of the cloned folder.
-
-5. Open the project folder in your preferred editor, such as Visual Studio Code.
-
-6. Configure Path:
-Ensure the correct path is set to the index.html file for launching the project:
-
-```plaintext
-project-folder/index.html
-Run the Project Locally
-```
-
-To view the website locally:
+5. To view the website locally:
 
 Install and activate the Live Server extension (if using VS Code).
 Right-click on the index.html file in the editor and select Open with Live Server.
