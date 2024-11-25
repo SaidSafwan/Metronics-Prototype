@@ -38,7 +38,6 @@ To clone and run this project on your local machine, follow these steps:
    To clone this repository, open **CMD** (Command Prompt) or your preferred terminal and run:
 
    ```cmd
-   Copy code
    git clone https://github.com/SaidSafwan/Metronics-Prototype.git
 
 2. Replace <repository-url> with the actual URL of this repository.
@@ -59,7 +58,6 @@ Open Project in Your Code Editor
 Ensure the correct path is set to the index.html file for launching the project:
 
 ```plaintext
-Copy code
 project-folder/index.html
 Run the Project Locally
 ```
