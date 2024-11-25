@@ -1,6 +1,6 @@
-# **Cloned Website Project**
+# **Metronics-Prototype Website Project**
 
-Welcome to the **Cloned Website Project**! This repository contains a replica of a real-world website, meticulously built using **HTML**, **CSS**, and **JavaScript**. Follow the steps below to set up and run this project locally.
+Welcome to the **Metronics-Prototype Website Project**! This repository contains a replica of a real-world website, meticulously built using **HTML**, **CSS**, and **JavaScript**. Follow the steps below to set up and run this project locally.
 
 ## **Project Overview**
 
