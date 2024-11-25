@@ -40,6 +40,7 @@
           src="https://preview.keenthemes.com/metronic8/demo61/assets/media/logos/demo44.svg"
           alt="Metronic logo"
         />
+        <i class="bx bx-menu menu-icon" onclick="toggleSidebar()"></i> <!-- Menu Icon -->
       </div>
 
       <div class="sub-container">
@@ -56,7 +57,7 @@
             class="icons border1"
             src="/frontend/icons/notification-icon.svg"
             alt="Notification Icon"
-            style="width: 32px"
+            style="width: 35px"
           />
           <img
             class="icons border2"
@@ -80,6 +81,18 @@
       </div>
     </nav>
 
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+      <i class="bx bx-x close-btn" onclick="toggleSidebar()"></i> <!-- Close Icon -->
+      <ul>
+        <li>Home</li>
+        <li>Pages</li>
+        <li>Apps</li>
+        <li>Help</li>
+      </ul>
+    </div>
+    
+    
     <div class="app-hero-container">
       <div class="feature-section">
         <ul class="feature-links">
@@ -543,6 +556,16 @@
 
     <script src="./Modals/dropdown.js"></script>
 
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar.style.left === "0px") {
+          sidebar.style.left = "-300px"; // Hide sidebar
+        } else {
+          sidebar.style.left = "0px"; // Show sidebar
+        }
+      }
+    </script>
     
     <script>
       // Initialize the map
