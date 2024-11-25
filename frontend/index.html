@@ -16,7 +16,7 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
 
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -555,72 +555,6 @@
     </footer>
 
     <script src="./Modals/dropdown.js"></script>
-
-    <script>
-      function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        if (sidebar.style.left === "0px") {
-          sidebar.style.left = "-300px"; // Hide sidebar
-        } else {
-          sidebar.style.left = "0px"; // Show sidebar
-        }
-      }
-    </script>
-    
-    <script>
-      // Initialize the map
-      const map = L.map("map").setView([52.360373, 4.859594], 18);
-  
-      // Add OpenStreetMap tiles
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-          maxZoom: 17, // Recommended maximum zoom level
-          attribution: '© OpenStreetMap contributors',
-      }).addTo(map);
-  
-      // Define a custom icon
-      const customIcon = L.icon({
-          iconUrl: "/frontend/icons/icons-location.svg", // Path to your custom icon
-          iconSize: [40, 50], // Size of the icon [width, height]
-          iconAnchor: [35, 70], // Point of the icon that will correspond to marker's location [x, y]
-          popupAnchor: [-14, -70], // Point from which the popup should open relative to the icon [x, y]
-      });
-  
-      // Add a marker with the custom icon
-      L.marker([52.360373, 4.859594], { icon: customIcon }).addTo(map)
-          .bindPopup("1054 XE Amsterdam")
-          .openPopup();
-  </script>
-  
+    <script src="./index.js"></script>
   </body>
-  <script>
-    // Select all the list items
-    const featureLinks = document.querySelectorAll(".feature-links li");
-
-    // Add click event listeners to each item
-    featureLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        // Remove 'active' class from all items
-        featureLinks.forEach((item) => item.classList.remove("active"));
-
-        // Add 'active' class to the clicked item
-        link.classList.add("active");
-      });
-    });
-
-    // Select all filter items (search bar and dropdowns)
-    const filterItems = document.querySelectorAll(
-      ".filter-section .search-bar, .filter-section .select-menu .select-btn"
-    );
-
-    // Add click event listeners
-    filterItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        // Remove 'clicked' class from all items
-        filterItems.forEach((el) => el.classList.remove("clicked"));
-
-        // Add 'clicked' class to the clicked item
-        item.classList.add("clicked");
-      });
-    });
-  </script>
 </html>

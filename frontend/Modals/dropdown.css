@@ -1,135 +1,118 @@
 /* ===== Google Font Import - Poppins ===== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
-*{
-    /* margin: 0;
-    padding: 0; */
-    box-sizing: border-box;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+:root {
+    --font-family: "Inter", Arial, Helvetica, sans-serif;
+    --color-primary: #1B84FF;
+    --color-secondary: #78829D;
+    --color-tertiary: #4B5675;
+    --color-background: #f1f1f465;
+    --color-border: rgba(128, 128, 128, 0.118);
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-hover-bg: #f1f1f465;
+    --color-hover-text: #1B84FF;
+    --color-dropdown-bg: white;
 }
-/* .select-menu{
-    width: 360px; 
-     margin: 140px auto;
-} */
-/* .select-menu .select-btn{
-    display: flex;
-    height: 55px;
-    color: #78829D;
-    background: #fff;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 8px;
-    align-items: center;
-    cursor: pointer;
-    justify-content: space-between;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-} */
-.select-menu .select-btn{
-    outline: none;
+
+* {
     box-sizing: border-box;
-    border: 1px solid rgba(128, 128, 128, 0.118);
+    font-family: var(--font-family);
+}
+
+.select-menu .select-btn {
+    outline: none;
+    border: 1px solid var(--color-border);
     border-radius: 8px;
-    color:#4B5675;
+    color: var(--color-tertiary);
     font-size: 0.95rem !important;
     font-weight: 500;
     background-color: #99a1b711;
     cursor: pointer;
-    width: 170px; /* Optional: Set a fixed width */
-    transition: all 0.3s ease; /* Smooth transition */
-    /* margin: 0; */
+    width: 170px;
+    transition: all 0.3s ease;
     display: flex;
     padding: 7px;
     align-items: center;
     justify-content: space-between;
-    /* background-color: red; */
 }
 
-.select-menu .select-btn:hover{
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.select-menu .select-btn:hover {
+    box-shadow: 0 2px 5px var(--color-shadow);
 }
 
-.select-btn i{
+.select-btn i {
     font-size: 25px;
     transition: 0.3s;
 }
-.select-menu.active .select-btn i{
+
+.select-menu.active .select-btn i {
     transform: rotate(-180deg);
 }
 
-.select-menu ul{
-    margin: 0 !important; 
+.select-menu ul {
+    margin: 0 !important;
 }
-.select-menu .options{
+
+.select-menu .options {
     position: absolute;
-    /* padding-right: 20px; */
-    /* margin-top: 10px; */
     width: 170px;
     padding: 0;
     border-radius: 8px;
-    background-color: white; 
-    color: #78829D;
-    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    background-color: var(--color-dropdown-bg);
+    color: var(--color-secondary);
+    box-shadow: 0 0 3px var(--color-shadow);
     display: none;
-    /* overflow: visible; */
     z-index: 10;
 }
-.select-menu.active .options{
+
+.select-menu.active .options {
     display: block;
 }
-.options .option{
+
+.options .option {
     display: flex;
-    /* height: 55px; */
     cursor: pointer;
-    /* padding: 0 16px; */
     margin: 0px 2px !important;
     font-size: 14px;
     font-weight: 400;
-    /* border-radius: 8px; */
     align-items: center;
     background: rgb(255, 255, 255);
     justify-content: space-between;
-    cursor: pointer;
     z-index: 999;
 }
-.options .option:hover{
-    background: #f1f1f465;
-    color: #1B84FF;
-}
-.option i{
-    font-size: 17px;
-    /* margin-right: 12px; */
-}
-.option .option-text{
-    /* font-size: 18px; */
-    color: #78829D;
-     flex-grow: 1; /* Ensure the text occupies available space */
-    /* text-align: left; Align text to the left */
+
+.options .option:hover {
+    background: var(--color-hover-bg);
+    color: var(--color-hover-text);
 }
 
-.option .option-text:hover{
-    /* font-size: 1px; */
-    color: #1B84FF;
-    border: none;
+.option i {
+    font-size: 17px;
+}
+
+.option .option-text {
+    color: var(--color-secondary);
+    flex-grow: 1;
+}
+
+.option .option-text:hover {
+    color: var(--color-hover-text);
 }
 
 .option .bx {
     display: none;
 }
 
-/* Show the check icon only for the selected option */
 .option.selected .bx {
     display: inline-block;
-    color: #1B84FF; /* Match the check icon color as needed */
+    color: var(--color-primary);
 }
 
-/* Highlight selected option */
 .option.selected {
-    background: #f1f1f465; /* Light gray background */
-    color: #1B84FF; /* Text color for selected option */
+    background: var(--color-background);
+    color: var(--color-hover-text);
 }
 
-/* Ensure the inner text specifically gets the correct color */
 .option.selected .option-text {
-    color: #1B84FF;
+    color: var(--color-hover-text);
 }
