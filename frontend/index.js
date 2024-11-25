@@ -19,7 +19,7 @@ function toggleSidebar() {
   
   // Defines a custom icon for the map marker
   const customIcon = L.icon({
-    iconUrl: "/frontend/icons/icons-location.svg", // Path to your custom icon
+    iconUrl: "./icons/icons-location.svg", // Path to your custom icon
     iconSize: [40, 50], // Size of the icon [width, height]
     iconAnchor: [35, 70], // Point of the icon that will correspond to marker's location [x, y]
     popupAnchor: [-14, -70], // Point from which the popup should open relative to the icon [x, y]
